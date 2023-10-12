@@ -136,6 +136,7 @@ main {
   cursor: pointer;
 }
 
+
 /* Location page */
 .button a {
   position: absolute;
@@ -144,29 +145,32 @@ main {
   text-decoration: none;
 }
 
-.location-main {
+.location {
   margin: 0;
   background-color: var(--secondary);
   color: #fff;
   padding: 2em 1rem;
 }
 
-.location-main h2 {
+.location-container h2 {
   text-transform: uppercase;
   font-family: var(--font-shoulders);
   letter-spacing: 2px;
-  font-size: 40px;
-  margin: 0;
+  font-size: 60px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.location-main h3 {
+.location__wrapper h3 {
   color: var(--primary);
   text-transform: uppercase;
   font-family: var(--font-shoulders);
   font-size: 25px;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
-.location-main p {
+.location__wrapper p {
   font-family: var(--font-outfit);
   font-size: 18px;
   line-height: 1.65;
@@ -175,6 +179,11 @@ main {
 .brown {
   background-color: var(--primary);
   color: var(--secondary);
+}
+
+.map {
+  max-height: 680px;
+  object-fit: cover;
 }
 
 
@@ -226,6 +235,21 @@ main {
   .social-media {
     justify-self: flex-end;
   }
+
+  .location-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2em;
+  }
+
+  .location__wrapper {
+    align-self: flex-start;
+    max-width: 500px;
+  }
+
 }
 
 /* Desktop */
@@ -270,7 +294,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
   }
-  
 
   main {
     margin-inline: auto;
