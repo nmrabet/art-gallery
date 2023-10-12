@@ -78,7 +78,7 @@ main {
   margin-bottom: 6rem;
 }
 
-.button-container a:hover {
+.button-container a:hover, .button a:hover {
   .btn-iddle {
     background-color: var(--primary);
   }
@@ -103,7 +103,7 @@ main {
 }
 
 .gallery-4,
-footer {
+.footer {
   background-color: var(--secondary);
   color: #fff;
   padding: 3em 2em;
@@ -135,6 +135,48 @@ footer {
   margin-right: 1rem;
   cursor: pointer;
 }
+
+/* Location page */
+.button a {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.location-main {
+  margin: 0;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 2em 1rem;
+}
+
+.location-main h2 {
+  text-transform: uppercase;
+  font-family: var(--font-shoulders);
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin: 0;
+}
+
+.location-main h3 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: var(--font-shoulders);
+  font-size: 25px;
+}
+
+.location-main p {
+  font-family: var(--font-outfit);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.brown {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
 
 /* Tablet */
 
