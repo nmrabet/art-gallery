@@ -243,6 +243,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     gap: 2em;
+    padding: 4rem 0;
   }
 
   .location__wrapper {
